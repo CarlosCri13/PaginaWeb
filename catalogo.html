@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo</title>
+  <link rel="stylesheet" href="stylecata.css">
+  <script src="script.js"></script>
+</head>
+
+  <header>
+    <img src="Imagenes/logo-removebg-preview.png">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="registro.html"> Regístrarse </a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <body> 
+<section class="contenido">
+<div class="mostrador" id="mostrador"> 
+  <div class="fila" >
+    <div class="item" onclick="cargar(this)">
+      <div class="contenedor-foto">
+        <img src="/catalogo/Imagenes/mause.png" alt="">
+        <p class="descripcion">MOUSE GAMER</p>
+        <span class="precio">$70</span>
+      </div>
+    </div>
+
+    <div class="item" onclick="cargar(this)">
+      <div class="contenedor-foto">
+        <img src="/catalogo/Imagenes/Microfono.png" alt="">
+        <p class="descripcion">MICRÓFONO GAMER</p>
+        <span class="precio">$45</span>
+      </div>
+    </div>
+
+    <div class="item" onclick="cargar(this)">
+      <div class="contenedor-foto">
+        <img src="/catalogo/Imagenes/Monitor.png" alt="">
+        <p class="descripcion">MONITOR GAMER</p>
+        <span class="precio">$225</span>
+      </div>
+    </div>
+
+    <div class="item" onclick="cargar(this)">
+      <div class="contenedor-foto">
+        <img src="/catalogo/Imagenes/Tecladorgb.png" alt="">
+        <p class="descripcion">TECLADO GAMER</p>
+        <span class="precio">$120</span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contenedor del item -->
+<div class="seleccion" id="seleccion">
+  <div class="cerrar" onclick="cerrar()">
+  </div>
+  <div class="info">
+    <img src="catalogo/Imagenes/mause.png" alt="" id="img">
+    <h2 id="modelo">MOUSE GAMER </h2>
+    <P id="descripcion">Descripcion Modelo</P>
+    <span class="precio" id="precio"> $70</span>
+    <div class="fila">
+      <div class="size">
+        <label for="SIZE"></label>
+        <select name="" id="">
+          <option value="">Rojo</option>
+          <option value="">Azul</option>
+          <option value="">Negro</option>
+        </select>
+      </div>
+      <button>AGREGAR AL CARRITO</button>
+    </div>
+
+  </div>
+</div>
+</section>
+<script src="scriptcata.js"> </script>
+  </body>
+
+  <footer>
+    <p>Derechos Reservados @</p>
+  </footer>
+
+  </html>
