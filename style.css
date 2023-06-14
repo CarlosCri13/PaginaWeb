@@ -1,0 +1,138 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo del cuerpo de la página */
+  body {
+    font-family: sans-serif;
+    background-color: #293969;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(Imagenes/ivan-mercado-Vn23hKQUNds-unsplash.jpg);    
+    padding: 20px;
+    color: white;
+  }
+  header img{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+/* Estilo del aside*/
+
+aside{
+    float:right;
+    width: 20%;
+    background-color: white;
+    padding: 10px;
+    height: 645px;
+    text-align: center;
+    display:block;
+}
+  
+  
+  /* Estilo del contenido principal */
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  section {
+    width: 70%;
+    height: 400px;
+    background-image: url(Imagenes/christopher-farrugia-2yQtqBqzDRo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    margin-bottom: 40px;
+    color: white;
+  }
+
+.sec1 div{
+    text-justify: auto;
+    text-align: center;
+  }
+  
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #46A2FD;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+    aside {
+        padding: 10px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 18px;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+    }
+  }
